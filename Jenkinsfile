@@ -1,5 +1,10 @@
 node{
      def mvnHome = tool name: 'maven-3', type: 'maven' 
+     
+     enviornment{
+     NAME=' Mukul'
+     LASTNAME = 'Sharma'
+     }
       stage('Checkout'){
          git 'https://github.com/LovesCloud/java-tomcat-maven-example'
        
@@ -12,7 +17,9 @@ node{
      //    sh "'${mvnHome}/bin/mvn' test surefire-report:report"
    //   }  
     
-      stage('Deploy') {     
+      stage('Deploy') {   
+           
+           sh "echo '$NAME  $SHARMA' is the collest person " 
    //         sshagent(['Tomcat-jenkins']) {
    //            sh 'scp -o StrictHostKeyChecking=no target/tomcatdeploymnetdemo.war jenkins@35.193.54.220:/opt/tomcat/webapps'
               
