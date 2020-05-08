@@ -19,7 +19,7 @@ node{
     
       stage('Deploy') {   
            
-           sh "echo '$NAME  $SHARMA' is the collest person " 
+           sh "echo '$NAME  $LASTNAME' is the coolest person " 
    //         sshagent(['Tomcat-jenkins']) {
    //            sh 'scp -o StrictHostKeyChecking=no target/tomcatdeploymnetdemo.war jenkins@35.193.54.220:/opt/tomcat/webapps'
               
