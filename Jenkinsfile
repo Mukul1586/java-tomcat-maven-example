@@ -1,5 +1,7 @@
 node{
      def mvnHome = tool name: 'maven-3', type: 'maven' 
+     def first = 'Mukul'
+     def last = 'Sharma'
      
      environment{
      NAME=' Mukul'
@@ -19,7 +21,7 @@ node{
     
       stage('Deploy') {   
            
-     sh label: '', script: 'echo \'${NAME} ${LASTNAME}\''
+     sh label: '', script: 'echo \'${first} ${last}\''
           
    //         sshagent(['Tomcat-jenkins']) {
    //            sh 'scp -o StrictHostKeyChecking=no target/tomcatdeploymnetdemo.war jenkins@35.193.54.220:/opt/tomcat/webapps'
