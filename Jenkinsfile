@@ -19,7 +19,7 @@ node{
     
       stage('Deploy') {   
            
-     sh label: '', script: 'echo \'${env.NAME} ${env.LASTNAME}\''
+     sh label: '', script: 'echo \'${NAME} ${LASTNAME}\''
           
    //         sshagent(['Tomcat-jenkins']) {
    //            sh 'scp -o StrictHostKeyChecking=no target/tomcatdeploymnetdemo.war jenkins@35.193.54.220:/opt/tomcat/webapps'
